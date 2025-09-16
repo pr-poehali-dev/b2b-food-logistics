@@ -51,9 +51,12 @@ export default function Index() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <Icon name="Building2" size={28} className="text-primary" />
-              <h1 className="text-2xl font-bold text-primary">Корпоративные Услуги</h1>
+            <div className="flex items-center space-x-3">
+              <Icon name="Building2" size={32} className="text-primary" />
+              <div>
+                <h1 className="text-2xl font-bold text-primary">Ланч Холл</h1>
+                <p className="text-sm text-gray-600">Корпоративные услуги</p>
+              </div>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Услуги</a>
@@ -347,7 +350,7 @@ export default function Index() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <Icon name="Building2" size={24} className="text-green-600" />
-              <span className="font-semibold">Корпоративные Услуги</span>
+              <span className="font-semibold">Ланч Холл</span>
             </div>
             <p className="text-sm">
               © 2024. Все права защищены. 15 лет надежного партнерства в сфере B2B услуг.
