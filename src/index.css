@@ -101,4 +101,10 @@
     @apply bg-background text-foreground;
     font-family: "Roboto", sans-serif;
   }
+
+  /* Smooth scrolling with offset for sticky header */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
 }
