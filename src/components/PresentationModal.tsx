@@ -35,6 +35,31 @@ export default function PresentationModal({ isOpen, onClose }: PresentationModal
       url: "https://cdn.poehali.dev/files/df19cfbd-a275-4f06-856b-467fb0d38629.jpg",
       title: "Котлета с гречкой",
       description: "Аппетитная котлета с гречневой кашей и укропом в индивидуальном контейнере"
+    },
+    {
+      url: "",
+      title: "Блюдо 6",
+      description: "Описание будет добавлено"
+    },
+    {
+      url: "",
+      title: "Блюдо 7",
+      description: "Описание будет добавлено"
+    },
+    {
+      url: "",
+      title: "Блюдо 8",
+      description: "Описание будет добавлено"
+    },
+    {
+      url: "",
+      title: "Блюдо 9",
+      description: "Описание будет добавлено"
+    },
+    {
+      url: "",
+      title: "Блюдо 10",
+      description: "Описание будет добавлено"
     }
   ];
 

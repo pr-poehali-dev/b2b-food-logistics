@@ -34,7 +34,7 @@ export default function HeroSection({ onContactClick, onPresentationClick }: Her
               onClick={onPresentationClick}
             >
               <Icon name="FileText" size={20} className="mr-2" />
-              <span>Презентация услуг</span>
+              Презентация услуг
             </Button>
           </div>
         </div>
