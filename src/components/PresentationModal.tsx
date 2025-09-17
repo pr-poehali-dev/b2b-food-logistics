@@ -12,24 +12,29 @@ export default function PresentationModal({ isOpen, onClose }: PresentationModal
 
   const images = [
     {
-      url: "https://cdn.poehali.dev/files/7db313af-282f-4f91-97e4-14f41a44ecac.jpg",
-      title: "Готовые комплексные обеды",
-      description: "Паста с фрикадельками, салат Оливье, борщ с хлебом - полноценное питание для ваших сотрудников"
+      url: "https://cdn.poehali.dev/files/3ad5d5f0-b3b6-47b7-97e9-707d522e33f4.jpg",
+      title: "Фаршированные перцы с пюре",
+      description: "Сочные фаршированные перцы с нежным картофельным пюре - сытный и полезный обед"
     },
     {
-      url: "https://cdn.poehali.dev/files/804a2ede-3c9f-487c-9e36-aa978bd8f394.jpg",
-      title: "Разнообразие блюд",
-      description: "Картофельное пюре с мясом, гречка с подливой, рис с овощами - широкий выбор горячих блюд"
+      url: "https://cdn.poehali.dev/files/e3eba772-ae88-4b8b-87d8-45b1be4462af.jpg",
+      title: "Котлеты с рисом и салатом",
+      description: "Золотистые котлеты с рассыпчатым рисом, свекольным салатом и зеленью"
     },
     {
-      url: "https://cdn.poehali.dev/files/92097cf3-7359-4693-afc2-5e8efd7a6e06.jpg",
-      title: "Полноценные ланч-боксы",
-      description: "Котлеты с пюре и брокколи, морковный салат, суп и хлеб - сбалансированное питание"
+      url: "https://cdn.poehali.dev/files/965fec9e-ace7-4e73-97c3-8c07e04cbfa4.jpg",
+      title: "Домашние супы и хлеб",
+      description: "Ассортимент свежих супов: грибной крем-суп, борщ, солянка с хлебом и сухариками"
     },
     {
-      url: "https://cdn.poehali.dev/files/0f5efd1c-3bec-4b7e-8100-cf60858ab43b.jpg",
-      title: "Мясные блюда с гарниром",
-      description: "Говядина с рисом и овощами, гречка с мясом - качественные блюда для рабочих"
+      url: "https://cdn.poehali.dev/files/b6512373-0fc7-4b43-b357-6819995701ac.jpg",
+      title: "Разнообразные ланч-боксы",
+      description: "Макароны с курицей, гречка с котлетой, винегрет, рыбная котлета с картофелем - 5 видов обедов"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/df19cfbd-a275-4f06-856b-467fb0d38629.jpg",
+      title: "Котлета с гречкой",
+      description: "Аппетитная котлета с гречневой кашей и укропом в индивидуальном контейнере"
     }
   ];
 
