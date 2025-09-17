@@ -22,6 +22,26 @@ export default function PresentationModal({ isOpen, onClose }: PresentationModal
       description: "Золотистые котлеты с рассыпчатым рисом, свекольным салатом и зеленью"
     },
     {
+      url: "https://cdn.poehali.dev/files/5ae38108-856a-45cf-9c42-66593297b2f0.jpg",
+      title: "Макароны с фрикадельками и борщ",
+      description: "Аппетитные макароны с тефтелями в томатном соусе, оливье и ароматный борщ с хлебом"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/a736aef6-0f5f-49ad-b6bf-ca7b0d536032.jpg",
+      title: "Готовые ланч-боксы с мясом",
+      description: "Множество готовых ланч-боксов: мясо с пюре, рис с овощами и мясом - свежее питание каждый день"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/320b0198-b4fa-4cc1-a0d2-b7bff79b75f9.jpg",
+      title: "Домашний обед с котлетой",
+      description: "Сочная котлета с картофельным пюре, брокколи, морковный салат, суп и хлеб - полноценный обед"
+    },
+    {
+      url: "",
+      title: "Блюдо 6",
+      description: "Описание будет добавлено"
+    },
+    {
       url: "https://cdn.poehali.dev/files/965fec9e-ace7-4e73-97c3-8c07e04cbfa4.jpg",
       title: "Домашние супы и хлеб",
       description: "Ассортимент свежих супов: грибной крем-суп, борщ, солянка с хлебом и сухариками"
@@ -37,29 +57,9 @@ export default function PresentationModal({ isOpen, onClose }: PresentationModal
       description: "Аппетитная котлета с гречневой кашей и укропом в индивидуальном контейнере"
     },
     {
-      url: "",
-      title: "Блюдо 6",
-      description: "Описание будет добавлено"
-    },
-    {
-      url: "",
-      title: "Блюдо 7",
-      description: "Описание будет добавлено"
-    },
-    {
-      url: "",
-      title: "Блюдо 8",
-      description: "Описание будет добавлено"
-    },
-    {
-      url: "",
-      title: "Блюдо 9",
-      description: "Описание будет добавлено"
-    },
-    {
-      url: "",
-      title: "Блюдо 10",
-      description: "Описание будет добавлено"
+      url: "https://cdn.poehali.dev/files/cf15b6ee-09b8-4313-9732-5a088dc42e54.jpg",
+      title: "Рулетики с пюре PAP",
+      description: "Мясные рулетики с беконом и нежное картофельное пюре - изысканное блюдо от PAP Production"
     }
   ];
 
