@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import ContactModal from "@/components/ContactModal";
 
 export default function Index() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalType, setModalType] = useState<'contact' | 'proposal'>('contact');
   const services = [
     {
       title: "Организация питания",
@@ -81,7 +85,14 @@ export default function Index() {
               Обслуживаем крупнейшие компании России с полным циклом услуг.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              <Button 
+                size="lg" 
+                className="bg-green-600 hover:bg-green-700"
+                onClick={() => {
+                  setModalType('contact');
+                  setModalOpen(true);
+                }}
+              >
                 <Icon name="Phone" size={20} className="mr-2" />
                 Связаться с нами
               </Button>
@@ -316,7 +327,7 @@ export default function Index() {
                   <Icon name="Phone" size={28} className="text-white" />
                 </div>
                 <h4 className="font-semibold mb-2">Телефон</h4>
-                <p className="text-gray-300">+7 (XXX) XXX-XX-XX</p>
+                <p className="text-gray-300">+7 (923) 808-29-59</p>
               </div>
               
               <div className="text-center">
@@ -324,7 +335,7 @@ export default function Index() {
                   <Icon name="Mail" size={28} className="text-white" />
                 </div>
                 <h4 className="font-semibold mb-2">Email</h4>
-                <p className="text-gray-300">info@company.ru</p>
+                <p className="text-gray-300">lanchholl@yandex.ru</p>
               </div>
               
               <div className="text-center">
@@ -332,11 +343,18 @@ export default function Index() {
                   <Icon name="MapPin" size={28} className="text-white" />
                 </div>
                 <h4 className="font-semibold mb-2">Офис</h4>
-                <p className="text-gray-300">Москва, Россия</p>
+                <p className="text-gray-300">г. Москва, Калужское шоссе, 56-й км (п Вороновское), квартал 138, дом 1, строение 7</p>
               </div>
             </div>
 
-            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+            <Button 
+              size="lg" 
+              className="bg-green-600 hover:bg-green-700"
+              onClick={() => {
+                setModalType('proposal');
+                setModalOpen(true);
+              }}
+            >
               <Icon name="MessageCircle" size={20} className="mr-2" />
               Запросить коммерческое предложение
             </Button>
@@ -358,6 +376,12 @@ export default function Index() {
           </div>
         </div>
       </footer>
+
+      <ContactModal 
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        type={modalType}
+      />
     </div>
   );
 }
