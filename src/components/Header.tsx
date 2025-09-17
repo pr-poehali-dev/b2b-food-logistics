@@ -7,12 +7,15 @@ export default function Header() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="bg-primary p-2 rounded-lg">
-              <Icon name="UtensilsCrossed" size={24} className="text-white" />
+            <div className="bg-primary p-3 rounded-lg flex items-center justify-center">
+              <div className="flex items-center space-x-1">
+                <Icon name="Coffee" size={20} className="text-white" />
+                <Icon name="UtensilsCrossed" size={20} className="text-white" />
+              </div>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">EDA-CITI</h1>
-              <p className="text-sm text-gray-600">Комплексные решения</p>
+              <h1 className="text-2xl font-bold text-primary">Ланч Холл</h1>
+              <p className="text-sm text-gray-600">Корпоративное питание</p>
             </div>
           </div>
           <div className="flex items-center space-x-6">
