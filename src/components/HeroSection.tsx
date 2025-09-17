@@ -8,13 +8,13 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onContactClick, onPresentationClick }: HeroSectionProps) {
   return (
-    <section className="bg-gradient-to-r from-amber-100 to-orange-100 text-gray-800 py-20">
+    <section className="bg-gradient-to-r from-amber-100 to-orange-100 text-gray-800 py-16">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">
             15 лет надежного партнерства
           </h2>
-          <p className="text-xl mb-8 text-gray-700">
+          <p className="text-lg mb-6 text-gray-700">
             Ведущий поставщик B2B услуг в сфере организации питания и логистических решений. 
             Обслуживаем крупнейшие компании России с полным циклом услуг.
           </p>
