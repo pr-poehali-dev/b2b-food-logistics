@@ -32,11 +32,11 @@ export default function Index() {
   ];
 
   const clients = [
-    { name: "Озон", logo: "🛒" },
-    { name: "Вайлдберриз", logo: "🛍️" },
-    { name: "Почта России", logo: "📦" },
-    { name: "ГК ПИК", logo: "🏗️" },
-    { name: "Гранель", logo: "🏭" }
+    { name: "Озон", logo: "https://cdn.poehali.dev/files/7ea9bfd7-c965-438b-b339-81b898f92a55.jpeg" },
+    { name: "Вайлдберриз", logo: "https://cdn.poehali.dev/files/ece84520-7335-4aa4-99ce-6e9fa1447e7e.jpg" },
+    { name: "Почта России", logo: "https://cdn.poehali.dev/files/91c0c85a-70be-4865-a53c-149b318a9085.jpg" },
+    { name: "ГК ПИК", logo: "https://cdn.poehali.dev/files/f8ca4a18-6af1-4997-9215-81c292792e74.jpg" },
+    { name: "Гранель", logo: "https://cdn.poehali.dev/files/0c523bcb-745e-4071-b2b6-d2f41c857ec0.jpg" }
   ];
 
   const menuOptions = [
@@ -302,8 +302,14 @@ export default function Index() {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             {clients.map((client, index) => (
               <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
-                <div className="text-4xl mb-3">{client.logo}</div>
-                <h4 className="font-semibold text-gray-900">{client.name}</h4>
+                <div className="flex items-center justify-center mb-3 h-16">
+                  <img 
+                    src={client.logo} 
+                    alt={client.name}
+                    className="max-h-12 max-w-full object-contain"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm">{client.name}</h4>
               </Card>
             ))}
           </div>
