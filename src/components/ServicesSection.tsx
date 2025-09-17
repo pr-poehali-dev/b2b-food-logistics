@@ -14,12 +14,12 @@ interface ServicesSectionProps {
 
 export default function ServicesSection({ services }: ServicesSectionProps) {
   return (
-    <section id="services" className="py-16 bg-gray-50">
+    <section id="services" className="py-16 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">Наши услуги</h3>
+          <h3 className="text-3xl font-bold text-gray-900 mb-4">Популярные блюда</h3>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Комплексные решения для бизнеса с собственной инфраструктурой и опытной командой
+            Выбирайте из нашего разнообразного меню свежих и полезных блюд
           </p>
         </div>
         
