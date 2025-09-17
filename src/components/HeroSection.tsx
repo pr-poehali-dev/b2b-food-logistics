@@ -14,7 +14,7 @@ export default function HeroSection({ onContactClick, onPresentationClick }: Her
           <h2 className="text-5xl font-bold mb-6">
             15 лет надежного партнерства
           </h2>
-          <p className="text-xl mb-8 text-gray-300">
+          <p className="text-xl mb-8 text-gray-700">
             Ведущий поставщик B2B услуг в сфере организации питания и логистических решений. 
             Обслуживаем крупнейшие компании России с полным циклом услуг.
           </p>
