@@ -69,7 +69,7 @@ ${type === 'proposal' ? 'Прошу предоставить коммерчес�
               required
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               placeholder="Ваше имя"
             />
           </div>
@@ -83,7 +83,7 @@ ${type === 'proposal' ? 'Прошу предоставить коммерчес�
               required
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               placeholder="+7 (XXX) XXX-XX-XX"
             />
           </div>
@@ -96,7 +96,7 @@ ${type === 'proposal' ? 'Прошу предоставить коммерчес�
               type="email"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               placeholder="your@email.com"
             />
           </div>
@@ -109,7 +109,7 @@ ${type === 'proposal' ? 'Прошу предоставить коммерчес�
               type="text"
               value={formData.company}
               onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               placeholder="Название компании"
             />
           </div>
@@ -121,7 +121,7 @@ ${type === 'proposal' ? 'Прошу предоставить коммерчес�
             <textarea
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               rows={3}
               placeholder="Расскажите о ваших потребностях..."
             />
@@ -138,7 +138,7 @@ ${type === 'proposal' ? 'Прошу предоставить коммерчес�
             </Button>
             <Button
               type="submit"
-              className="flex-1 bg-orange-500 hover:bg-orange-600"
+              className="flex-1 bg-green-600 hover:bg-green-700"
             >
               <Icon name="MessageCircle" size={16} className="mr-2" />
               Отправить в WhatsApp
