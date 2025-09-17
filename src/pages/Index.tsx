@@ -4,10 +4,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 import ContactModal from "@/components/ContactModal";
+import PresentationModal from "@/components/PresentationModal";
 
 export default function Index() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalType, setModalType] = useState<'contact' | 'proposal'>('contact');
+  const [presentationOpen, setPresentationOpen] = useState(false);
   const services = [
     {
       title: "Организация питания",
@@ -96,9 +98,14 @@ export default function Index() {
                 <Icon name="Phone" size={20} className="mr-2" />
                 Связаться с нами
               </Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-slate-900">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="text-white border-white hover:bg-white hover:text-slate-900"
+                onClick={() => setPresentationOpen(true)}
+              >
                 <Icon name="FileText" size={20} className="mr-2" />
-                Презентация услуг
+                <span>Презентация услуг</span>
               </Button>
             </div>
           </div>
@@ -381,6 +388,11 @@ export default function Index() {
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
         type={modalType}
+      />
+
+      <PresentationModal 
+        isOpen={presentationOpen}
+        onClose={() => setPresentationOpen(false)}
       />
     </div>
   );

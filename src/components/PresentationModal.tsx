@@ -1,0 +1,179 @@
+import React, { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import Icon from '@/components/ui/icon';
+
+interface PresentationModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export default function PresentationModal({ isOpen, onClose }: PresentationModalProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const images = [
+    {
+      url: "https://cdn.poehali.dev/files/7db313af-282f-4f91-97e4-14f41a44ecac.jpg",
+      title: "Готовые комплексные обеды",
+      description: "Паста с фрикадельками, салат Оливье, борщ с хлебом - полноценное питание для ваших сотрудников"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/804a2ede-3c9f-487c-9e36-aa978bd8f394.jpg",
+      title: "Разнообразие блюд",
+      description: "Картофельное пюре с мясом, гречка с подливой, рис с овощами - широкий выбор горячих блюд"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/92097cf3-7359-4693-afc2-5e8efd7a6e06.jpg",
+      title: "Полноценные ланч-боксы",
+      description: "Котлеты с пюре и брокколи, морковный салат, суп и хлеб - сбалансированное питание"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/0f5efd1c-3bec-4b7e-8100-cf60858ab43b.jpg",
+      title: "Мясные блюда с гарниром",
+      description: "Говядина с рисом и овощами, гречка с мясом - качественные блюда для рабочих"
+    }
+  ];
+
+  const nextImage = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+      <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-hidden">
+        
+        {/* Header */}
+        <div className="flex justify-between items-center p-6 border-b">
+          <h2 className="text-2xl font-bold text-gray-900">Презентация наших услуг</h2>
+          <button
+            onClick={onClose}
+            className="text-gray-500 hover:text-gray-700 transition-colors"
+          >
+            <Icon name="X" size={28} />
+          </button>
+        </div>
+
+        {/* Content */}
+        <div className="p-6">
+          
+          {/* Image Gallery */}
+          <div className="relative mb-6">
+            <div className="relative aspect-video rounded-lg overflow-hidden bg-gray-100">
+              <img
+                src={images[currentIndex].url}
+                alt={images[currentIndex].title}
+                className="w-full h-full object-cover"
+              />
+              
+              {/* Navigation Arrows */}
+              <button
+                onClick={prevImage}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all"
+              >
+                <Icon name="ChevronLeft" size={24} />
+              </button>
+              
+              <button
+                onClick={nextImage}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all"
+              >
+                <Icon name="ChevronRight" size={24} />
+              </button>
+
+              {/* Image Counter */}
+              <div className="absolute bottom-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+                {currentIndex + 1} / {images.length}
+              </div>
+            </div>
+
+            {/* Image Description */}
+            <div className="mt-4 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                {images[currentIndex].title}
+              </h3>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                {images[currentIndex].description}
+              </p>
+            </div>
+          </div>
+
+          {/* Thumbnails */}
+          <div className="flex justify-center gap-2 mb-6">
+            {images.map((image, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${
+                  index === currentIndex 
+                    ? 'border-green-600 opacity-100' 
+                    : 'border-gray-300 opacity-70 hover:opacity-100'
+                }`}
+              >
+                <img
+                  src={image.url}
+                  alt={image.title}
+                  className="w-full h-full object-cover"
+                />
+              </button>
+            ))}
+          </div>
+
+          {/* Additional Info */}
+          <div className="bg-green-50 rounded-lg p-6 text-center">
+            <div className="flex items-center justify-center mb-3">
+              <Icon name="CheckCircle" size={24} className="text-green-600 mr-2" />
+              <h4 className="text-lg font-semibold text-green-800">
+                Качественное питание для вашей команды
+              </h4>
+            </div>
+            <p className="text-green-700 mb-4">
+              Мы готовим свежие, вкусные и сбалансированные блюда каждый день. 
+              Наша продукция соответствует всем санитарным нормам и стандартам качества.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+              <div className="flex items-center justify-center">
+                <Icon name="Users" size={16} className="text-green-600 mr-2" />
+                <span>500+ порций ежедневно</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <Icon name="Clock" size={16} className="text-green-600 mr-2" />
+                <span>Своевременная доставка</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <Icon name="Award" size={16} className="text-green-600 mr-2" />
+                <span>15 лет опыта</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="border-t p-6 bg-gray-50 flex flex-col sm:flex-row justify-center gap-4">
+          <Button 
+            onClick={onClose}
+            variant="outline"
+            className="flex-1 sm:flex-none"
+          >
+            Закрыть презентацию
+          </Button>
+          <Button 
+            onClick={() => {
+              // Здесь можно добавить логику для перехода к форме заказа
+              onClose();
+              // Например, открыть форму ContactModal
+            }}
+            className="flex-1 sm:flex-none bg-green-600 hover:bg-green-700"
+          >
+            <Icon name="MessageCircle" size={16} className="mr-2" />
+            Заказать питание
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+}
