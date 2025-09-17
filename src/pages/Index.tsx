@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import CateringSection from "@/components/CateringSection";
 import PackagingSection from "@/components/PackagingSection";
@@ -84,6 +85,8 @@ export default function Index() {
         onContactClick={handleContactClick}
         onPresentationClick={handlePresentationClick}
       />
+      
+      <AboutSection />
       
       <ServicesSection services={services} />
       

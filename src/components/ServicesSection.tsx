@@ -14,7 +14,7 @@ interface ServicesSectionProps {
 
 export default function ServicesSection({ services }: ServicesSectionProps) {
   return (
-    <section id="services" className="py-16 bg-gray-50">
+    <section id="services" className="py-16 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Наши услуги</h3>
@@ -23,7 +23,7 @@ export default function ServicesSection({ services }: ServicesSectionProps) {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
           {services.map((service, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video">
