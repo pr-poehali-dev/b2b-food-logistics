@@ -30,7 +30,7 @@ export default function HeroSection({ onContactClick, onPresentationClick }: Her
             <Button 
               size="lg" 
               variant="outline" 
-              className="text-white border-white hover:bg-white hover:text-slate-900"
+              className="text-white border-white bg-slate-800/50 hover:bg-white hover:text-slate-900"
               onClick={onPresentationClick}
             >
               <Icon name="FileText" size={20} className="mr-2" />

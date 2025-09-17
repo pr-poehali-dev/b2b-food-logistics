@@ -37,9 +37,9 @@ export default function PresentationModal({ isOpen, onClose }: PresentationModal
       description: "Сочная котлета с картофельным пюре, брокколи, морковный салат, суп и хлеб - полноценный обед"
     },
     {
-      url: "",
-      title: "Блюдо 6",
-      description: "Описание будет добавлено"
+      url: "https://cdn.poehali.dev/files/7e3658fd-633e-42d1-aa07-f41deb44daa3.jpg",
+      title: "Домашние ланч-боксы ассорти",
+      description: "Разнообразные блюда: мясо с пюре, гречка с печенью, рис с мясом и овощами - полноценные обеды для каждого"
     },
     {
       url: "https://cdn.poehali.dev/files/965fec9e-ace7-4e73-97c3-8c07e04cbfa4.jpg",
