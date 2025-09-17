@@ -8,43 +8,43 @@ interface ContactsSectionProps {
 export default function ContactsSection({ onProposalClick }: ContactsSectionProps) {
   return (
     <>
-      <section id="contacts" className="py-16 bg-slate-900 text-white">
+      <section id="contacts" className="py-16 bg-gradient-to-r from-amber-100 to-orange-100 text-gray-800">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl font-bold mb-6">Свяжитесь с нами</h3>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-gray-600 mb-8">
               Готовы обсудить ваши потребности в организации питания и логистических услуг
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
-                <div className="mx-auto mb-4 w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
+                <div className="mx-auto mb-4 w-16 h-16 bg-primary rounded-full flex items-center justify-center">
                   <Icon name="Phone" size={28} className="text-white" />
                 </div>
                 <h4 className="font-semibold mb-2">Телефон</h4>
-                <p className="text-gray-300">+7 (923) 808-29-59</p>
+                <p className="text-gray-600">+7 (923) 808-29-59</p>
               </div>
               
               <div className="text-center">
-                <div className="mx-auto mb-4 w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
+                <div className="mx-auto mb-4 w-16 h-16 bg-primary rounded-full flex items-center justify-center">
                   <Icon name="Mail" size={28} className="text-white" />
                 </div>
                 <h4 className="font-semibold mb-2">Email</h4>
-                <p className="text-gray-300">lanchholl@yandex.ru</p>
+                <p className="text-gray-600">lanchholl@yandex.ru</p>
               </div>
               
               <div className="text-center">
-                <div className="mx-auto mb-4 w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
+                <div className="mx-auto mb-4 w-16 h-16 bg-primary rounded-full flex items-center justify-center">
                   <Icon name="MapPin" size={28} className="text-white" />
                 </div>
                 <h4 className="font-semibold mb-2">Офис</h4>
-                <p className="text-gray-300">г. Москва, Калужское шоссе, 56-й км (п Вороновское), квартал 138, дом 1, строение 7</p>
+                <p className="text-gray-600">г. Москва, Калужское шоссе, 56-й км (п Вороновское), квартал 138, дом 1, строение 7</p>
               </div>
             </div>
 
             <Button 
               size="lg" 
-              className="bg-green-600 hover:bg-green-700"
+              className="bg-primary hover:bg-primary/90"
               onClick={onProposalClick}
             >
               <Icon name="MessageCircle" size={20} className="mr-2" />
