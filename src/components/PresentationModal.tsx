@@ -40,26 +40,6 @@ export default function PresentationModal({ isOpen, onClose }: PresentationModal
       url: "https://cdn.poehali.dev/files/7e3658fd-633e-42d1-aa07-f41deb44daa3.jpg",
       title: "Домашние ланч-боксы ассорти",
       description: "Разнообразные блюда: мясо с пюре, гречка с печенью, рис с мясом и овощами - полноценные обеды для каждого"
-    },
-    {
-      url: "https://cdn.poehali.dev/files/965fec9e-ace7-4e73-97c3-8c07e04cbfa4.jpg",
-      title: "Домашние супы и хлеб",
-      description: "Ассортимент свежих супов: грибной крем-суп, борщ, солянка с хлебом и сухариками"
-    },
-    {
-      url: "https://cdn.poehali.dev/files/b6512373-0fc7-4b43-b357-6819995701ac.jpg",
-      title: "Разнообразные ланч-боксы",
-      description: "Макароны с курицей, гречка с котлетой, винегрет, рыбная котлета с картофелем - 5 видов обедов"
-    },
-    {
-      url: "https://cdn.poehali.dev/files/df19cfbd-a275-4f06-856b-467fb0d38629.jpg",
-      title: "Котлета с гречкой",
-      description: "Аппетитная котлета с гречневой кашей и укропом в индивидуальном контейнере"
-    },
-    {
-      url: "https://cdn.poehali.dev/files/cf15b6ee-09b8-4313-9732-5a088dc42e54.jpg",
-      title: "Рулетики с пюре PAP",
-      description: "Мясные рулетики с беконом и нежное картофельное пюре - изысканное блюдо от PAP Production"
     }
   ];
 
